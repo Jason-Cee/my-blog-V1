@@ -26,7 +26,6 @@ def fetch_users():
     return new_data
 
 
-users = fetch_users()
 
 
 def init_user_table():
@@ -53,6 +52,7 @@ def init_post_table():
 
 init_user_table()
 init_post_table()
+users = fetch_users()
 
 username_table = {u.username: u for u in users}
 userid_table = {u.id: u for u in users}
